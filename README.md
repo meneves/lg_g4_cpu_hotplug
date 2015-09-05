@@ -8,7 +8,7 @@ U can use it with orginal kernel, so only rooted device is needed (no need to un
 
 # Usage
 
-1) download all files and place it on sdcard
+1) download all files and place it on (internal) sdcard + give them +x permission (executable)
 
 2) make sure you use "interactive" governor (default)
 
