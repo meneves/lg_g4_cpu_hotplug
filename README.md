@@ -19,7 +19,7 @@ U can use it with orginal kernel, so only rooted device is needed (no need to un
 
 2) run terminal emulator and navigate to downloaded folder (for example cd /sdcard/Download/cpu/)
 
-3) give all .sh script permission to execute (chmod +x *.sh)
+3) give all .sh script permission to execute (chmod 777 *.sh)
 
 4) make sure you use "interactive" governor (default)
 
