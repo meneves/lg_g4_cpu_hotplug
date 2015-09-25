@@ -36,6 +36,6 @@ U can use it with orginal kernel, so only rooted device is needed (no need to un
 
 # Support thread
 
-* http://forum.xda-developers.com/g4/general/mod-lg-g4-cpu-hot-plugging-shell-sh-t319470 (english)
+* http://forum.xda-developers.com/g4/general/mod-lg-g4-cpu-hot-plugging-shell-sh-t3194702 (english)
 * http://forum.android.com.pl/topic/246463-root-battery-saver-lg-g4-cpu-hot-plugging-shell-sh-script-gov-tweaks/ (polish)
 
