@@ -15,15 +15,17 @@ U can use it with orginal kernel, so only rooted device is needed (no need to un
 
 # Usage
 
-1) download all files and place it on internal memory
+1) download all files and place it on internal memory using some explorer app (for example - "root browser"), best to folder /data/cpu_hotplug_meneves/ )
 
-2) run terminal emulator and navigate to downloaded folder (for example cd /sdcard/Download/cpu/)
+2) run terminal emulator and navigate to downloaded folder (cd /data/cpu_hotplug_meneves//)
 
-3) give all .sh script permission to execute (chmod 777 *.sh)
+3) execute "su" and then:
 
-4) make sure you use "interactive" governor (default)
+4) give all .sh script permission to execute (chmod 744 *.sh  (give it chmod 777 *.sh if does not work))
 
-5) execute "su" and then:
+5) make sure you use "interactive" governor (default)
+
+6) and then:
 
   * start service by calling ./start.sh
   * stop service by calling ./stop.sh
