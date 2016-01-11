@@ -17,7 +17,7 @@ U can use it with orginal kernel, so only rooted device is needed (no need to un
 
 1) download all files and place it on internal memory using some explorer app (for example - "root browser"), best to folder /data/cpu_hotplug_meneves/ )
 
-2) run terminal emulator and navigate to downloaded folder (cd /data/cpu_hotplug_meneves//)
+2) run terminal emulator and navigate to downloaded folder (cd /data/cpu_hotplug_meneves/ )
 
 3) execute "su" and then:
 
