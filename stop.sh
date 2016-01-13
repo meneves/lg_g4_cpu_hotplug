@@ -1,11 +1,11 @@
 #!/system/bin/sh
 
-if [ -e last_pid.txt ];
+if [ -e $TMPDIR/cpu_hotplug_last_pid.txt ];
 then
-  PID=`cat last_pid.txt`
-  rm last_pid.txt
+  PID=`cat $TMPDIR/cpu_hotplug_last_pid.txt`
+  rm $TMPDIR/cpu_hotplug_last_pid.txt
 else
-  PID=`ps w | grep "cpu_freq_hotplug.sh" | grep "{cpu_freq" | grep -oE "^[0-9]+"`
+  PID=`ps w | grep "cpu_freq_hotplug.sh" | grep "{cpu_freq" | grep -oE "^ *[0-9]+" | grep -oE "[0-9]+"`
 fi
 
 if [ "$PID" != "" ];
