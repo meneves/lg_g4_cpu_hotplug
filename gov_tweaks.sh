@@ -1,6 +1,5 @@
 #!/system/bin/sh
 
-# list of supported governors (interactive based for now)
 for GOV in interactive cafactive
 do
         if [ -d /sys/devices/system/cpu/cpu0/cpufreq/$GOV ];
@@ -11,17 +10,19 @@ do
 done
 
 timer_rate=50000
-above_hispeed_delay="50000 960000:150000"
+above_hispeed_delay="50000 960000:100000"
 hispeed_freq="633000"
-target_loads=110
-min_sample_time=500000
-timer_slack=500000
+target_loads=85
+min_sample_time=250000
+timer_slack=250000
 go_hispeed_load=100
 io_is_busy=0
 max_freq_hysteresis=0
 
 for PR in 0 1 2 3
 do
+        echo 1 > /sys/devices/system/cpu/cpu${PR}/online
+
         echo $timer_rate > /sys/devices/system/cpu/cpu${PR}/cpufreq/$governor/timer_rate
         echo $above_hispeed_delay > /sys/devices/system/cpu/cpu${PR}/cpufreq/$governor/above_hispeed_delay
         echo $hispeed_freq > /sys/devices/system/cpu/cpu${PR}/cpufreq/$governor/hispeed_freq
